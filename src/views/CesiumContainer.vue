@@ -85,7 +85,6 @@ onMounted(() => {
       // 定位完成之后的回调函数
     }
   })
-  // 加载GeoJson数据并应用材质, 该json数据不能设置材质通过光照显示阴影，我这边需要3d titles数据可以？
   // viewer.scene.primitives.add(new Cesium.Cesium3DTileset({url: '/sj.json'}));
   const promise = Cesium.GeoJsonDataSource.load('/sj.json').then(function (dataSource) {
     viewer.dataSources.add(dataSource)
